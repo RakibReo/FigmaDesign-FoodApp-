@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/hello_john"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_hello__john"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+      <ImageView
+          android:id="@+id/icon_home"
+          android:layout_width="35dp"
+          android:layout_height="40dp"
+          android:src="@drawable/ic_home"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@+id/hello_john"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintVertical_bias="0.03"
+          app:layout_constraintHorizontal_bias="0.8"
+          />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon_home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.03"
+        app:layout_constraintHorizontal_bias="0.8"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/home_banner_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:background="@drawable/img_banner_card"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <TextView
+        android:id="@+id/home_texone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommened For You"
+        android:fontFamily="@font/bebas_neue"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/home_banner_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+    <ImageButton
+        android:id="@+id/home_imgBtnOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_itemone"
+        app:layout_constraintTop_toBottomOf="@+id/home_texone"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_itemtwo"
+        app:layout_constraintTop_toBottomOf="@+id/home_texone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home_imgBtnOne"
+
+        />
+
+    <androidx.constraintlayout.utils.widget.MotionLabel
+        android:id="@+id/home_textwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommened For You"
+        android:fontFamily="@font/bebas_neue"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/home_imgBtnOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/home_textwo"
+        app:layout_constraintVertical_bias="0.03"
+   app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/m_restaurant"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/d_restaurant"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bk_estaurant"/>
+
+
+
+    </LinearLayout>
+
+<ImageButton
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:src="@drawable/navbar_down"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
